@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
-    template: `<p>Ім'я: {{name}}</p>
-                    <p>Вік: {{age}}</p>`
+    template: ` <input type="text" [value]="name" />
+                <input type="text" [value]="age" />
+                <p [textContent]="name"></p>`
 })
 export class AppComponent {
     name = "Tom";
