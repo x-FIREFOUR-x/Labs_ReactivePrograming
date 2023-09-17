@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
-    template: `<p>Кількість кліків {{count}}</p>
-                <button (click)="increase()">Click</button>
-                <p>Кількість кліків {{count_2}}</p>
-                <button (click)="increase_2($event)">Click</button>`
+    template: `<p>Привіт {{name}}</p>
+                <input type="text" [(ngModel)]="name" /> <br><br>
+                <input type="text" [(ngModel)]="name" />`
 })
 export class AppComponent {
     name = "Tom";
