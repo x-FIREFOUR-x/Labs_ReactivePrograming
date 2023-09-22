@@ -1,7 +1,25 @@
 import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
-    template: `<p>Привіт {{name}}</p>
+    template: `<p>Ім'я: {{name}}</p>
+                <p>Вік: {{age}}</p>
+
+                <input type="text" [value]="name" />
+                <input type="text" [value]="age" />
+                <p [textContent]="name"></p>
+
+                <table border="1">
+                <tr><td [attr.colspan]="colspan">One-Two</td></tr>
+                <tr><td>Three</td><td>Four</td></tr>
+                <tr><td>Five</td><td>Six</td></tr>
+                </table>
+
+                <p>Кількість кліків {{count}}</p>
+                <button (click)="increase()">Click</button>
+                <p>Кількість кліків {{count_2}}</p>
+                <button (click)="increase_2($event)">Click</button>
+
+                <p>Привіт {{name}}</p>
                 <input type="text" [(ngModel)]="name" /> <br><br>
                 <input type="text" [(ngModel)]="name" />`
 })
