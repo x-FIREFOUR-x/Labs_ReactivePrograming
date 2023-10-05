@@ -9,3 +9,6 @@
     <h2>Ласкаво просимо {{name}}!</h2>
 </child-comp>
 <p>Hello {{name}}</p>
+
+<child-comp [userName]="name2" [userAge]="age"></child-comp>
+<input type="text" [(ngModel)]="name2" />
