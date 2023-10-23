@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+export interface Post{
+  title:string;
+  text:string;
+  id?:number;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Blog';
+  title = 'BlogComponents';
+  posts: Post[]=[{title:'Вивчаю компоненти', text:'Створюю проект "Блог"', id:1},
+    {title:'Вивчаю директиви', text:' ще створюю "Блог"', id:2}]
 }
