@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Post } from '../app.component';
 
 @Component({
@@ -7,6 +7,7 @@ import { Post } from '../app.component';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit{
+  @Output() onAdd:EventEmitter<Post> = new EventEmitter<Post>()
   title='';
   text='';
   
@@ -19,6 +20,7 @@ export class PostFormComponent implements OnInit{
         title:this.title,
         text:this.text
       }
+      this.onAdd.emit(post);
       console.log('New post', post);
       this.title = this.text = ''; // очищення полів 
     }
