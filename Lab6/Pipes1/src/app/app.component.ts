@@ -26,7 +26,11 @@ import { Component } from '@angular/core';
                 
                 <div>{{message | slice:6:11 | uppercase}}</div>
                 
-                <div>Число до форматування: {{x}}<br>Число після форматування: {{x | format}}</div>`
+                <div>Число до форматування: {{x}}<br>Число після форматування: {{x | format}}</div>
+                
+                <div>{{users | join}}</div>
+                <div>{{users | join:1}}</div>
+                <div>{{users | join:1:3}}</div>`
 })
 
 export class AppComponent {
@@ -40,4 +44,5 @@ export class AppComponent {
     message = "Hello World!";
 
     x: number = 15.45;
+    users = ["Tom", "Alice", "Sam", "Kate", "Bob"];
 }
