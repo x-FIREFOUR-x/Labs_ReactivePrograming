@@ -24,7 +24,9 @@ import { Component } from '@angular/core';
                 <div>{{money | currency:'RUB':'symbol-narrow':'1.1-1'}}</div>
                 <div>{{money | currency:'RUB':'тока седня по цене '}}</div>
                 
-                <div>{{message | slice:6:11 | uppercase}}</div>`
+                <div>{{message | slice:6:11 | uppercase}}</div>
+                
+                <div>Число до форматування: {{x}}<br>Число після форматування: {{x | format}}</div>`
 })
 
 export class AppComponent {
@@ -36,4 +38,6 @@ export class AppComponent {
     money: number = 23.45;
 
     message = "Hello World!";
+
+    x: number = 15.45;
 }
