@@ -22,7 +22,9 @@ import { Component } from '@angular/core';
                 <div>{{money | currency:'RUB':'symbol-narrow'}}</div>
                 <div>{{money | currency:'RUB':'symbol':'1.1-1'}}</div>
                 <div>{{money | currency:'RUB':'symbol-narrow':'1.1-1'}}</div>
-                <div>{{money | currency:'RUB':'тока седня по цене '}}</div>`
+                <div>{{money | currency:'RUB':'тока седня по цене '}}</div>
+                
+                <div>{{message | slice:6:11 | uppercase}}</div>`
 })
 
 export class AppComponent {
@@ -32,4 +34,6 @@ export class AppComponent {
     myNewDate = Date.now();
     pi: number = 3.1415;
     money: number = 23.45;
+
+    message = "Hello World!";
 }
