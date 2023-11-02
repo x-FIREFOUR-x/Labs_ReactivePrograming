@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
                 <div>{{welcome | uppercase}}</div>
                 <div>{{welcome | lowercase}}</div>
                 <div>{{persentage | percent}}</div>
-                <div>{{persentage | currency}}</div>`
+                <div>{{persentage | currency}}</div>
+                <div>{{welcome | slice:3}}</div>
+                <div>{{welcome | slice:6:11}}</div>`
 })
 
 export class AppComponent {
