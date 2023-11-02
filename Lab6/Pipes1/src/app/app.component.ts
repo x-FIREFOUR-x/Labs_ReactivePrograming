@@ -30,7 +30,11 @@ import { Component } from '@angular/core';
                 
                 <div>{{users | join}}</div>
                 <div>{{users | join:1}}</div>
-                <div>{{users | join:1:3}}</div>`
+                <div>{{users | join:1:3}}</div>
+                
+                <div>{{n | sqrt}}</div>`
+
+
 })
 
 export class AppComponent {
@@ -45,4 +49,6 @@ export class AppComponent {
 
     x: number = 15.45;
     users = ["Tom", "Alice", "Sam", "Kate", "Bob"];
+
+    n: number = 81;
 }
