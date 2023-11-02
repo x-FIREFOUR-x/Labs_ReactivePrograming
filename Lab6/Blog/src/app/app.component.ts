@@ -12,6 +12,7 @@ export interface Post{
 })
 export class AppComponent {
   title = 'BlogComponents';
+  search = ''
   posts: Post[]=[{title:'Вивчаю компоненти', text:'Створюю проект "Блог"', id:1},
     {title:'Вивчаю директиви', text:'Все ще створюю "Блог"', id:2}]
 

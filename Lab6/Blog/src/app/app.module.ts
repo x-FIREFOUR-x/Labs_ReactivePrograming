@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostFormComponent } from './post-form/post-form.component';
+import { SearchPipe} from './search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
-    PostFormComponent
+    PostFormComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
