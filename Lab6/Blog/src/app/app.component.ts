@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 export interface Post{
   title:string;
   text:string;
-  id?:number;
+  id:number;
   date: Date;
 }
 

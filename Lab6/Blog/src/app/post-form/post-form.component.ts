@@ -25,6 +25,7 @@ export class PostFormComponent implements OnInit{
       const post: Post = {
         title:this.title,
         text:this.text,
+        id: Date.now(),
         date: new Date()
       }
       this.onAdd.emit(post);
