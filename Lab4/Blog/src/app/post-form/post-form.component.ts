@@ -18,7 +18,8 @@ export class PostFormComponent implements OnInit{
     if (this.title.trim() && this.text.trim()){
       const post: Post = {
         title:this.title,
-        text:this.text
+        text:this.text,
+        id: Date.now()
       }
       this.onAdd.emit(post);
       console.log('New post', post);
