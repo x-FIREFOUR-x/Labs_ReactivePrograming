@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/sports-shop",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
